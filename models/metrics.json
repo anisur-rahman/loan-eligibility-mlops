@@ -1,0 +1,30 @@
+{
+  "best_model": "gradient_boosting",
+  "best_score_metric": "roc_auc",
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.6457653807220785,
+      "precision": 0.8031214742384355,
+      "recall": 0.6701184592453127,
+      "f1": 0.7306162596758329,
+      "roc_auc": 0.6773719290922591,
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       0.41      0.58      0.48      5035\n           1       0.80      0.67      0.73     12747\n\n    accuracy                           0.65     17782\n   macro avg       0.61      0.63      0.61     17782\nweighted avg       0.69      0.65      0.66     17782\n"
+    },
+    "random_forest": {
+      "accuracy": 0.73197615566303,
+      "precision": 0.7710385111729946,
+      "recall": 0.8905624852906566,
+      "f1": 0.8265016381507099,
+      "roc_auc": 0.7442668871052394,
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       0.54      0.33      0.41      5035\n           1       0.77      0.89      0.83     12747\n\n    accuracy                           0.73     17782\n   macro avg       0.66      0.61      0.62     17782\nweighted avg       0.71      0.73      0.71     17782\n"
+    },
+    "gradient_boosting": {
+      "accuracy": 0.7384433696996964,
+      "precision": 0.757703081232493,
+      "recall": 0.933709892523731,
+      "f1": 0.8365489369179406,
+      "roc_auc": 0.7518018414909862,
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       0.59      0.24      0.35      5035\n           1       0.76      0.93      0.84     12747\n\n    accuracy                           0.74     17782\n   macro avg       0.68      0.59      0.59     17782\nweighted avg       0.71      0.74      0.70     17782\n"
+    }
+  }
+}
