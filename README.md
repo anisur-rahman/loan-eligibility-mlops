@@ -109,11 +109,32 @@ http://127.0.0.1:8000/health
 You should see JSON like: {"status":"ok","model_loaded":true}
 
 Then open: http://127.0.0.1:8000/docs
-This opens the FastAPI interactive docs page where you can test /predict.
-Test /predict from the docs page
-click POST /predict
-click Try it out
-paste a JSON example
+- This opens the FastAPI interactive docs page where you can test /predict.
+- Test /predict from the docs page
+- click POST /predict
+- click Try it out
+- paste a JSON example
+
+## API Example
+
+POST /predict
+
+```json
+{
+  "loan_id": 2001,
+  "customer_id": "C9001",
+  "current_loan_amount": 10000,
+  "term": "Short Term",
+  "credit_score": 735,
+  "annual_income": 95000
+}
+
+Response:
+```json
+{
+  "prediction": "Loan Given",
+  "approval_probability": 0.89
+}
 
 ## FastAPI app Screenshots
 
