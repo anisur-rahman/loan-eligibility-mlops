@@ -104,6 +104,9 @@ curl -X POST http://127.0.0.1:8000/predict \
     "tax_liens": 0
   }'
 ```
+## Machine Learning Pipeline
+
+![ML Pipeline](images/bank_loan-02.png)
 
 ## Notes
 
