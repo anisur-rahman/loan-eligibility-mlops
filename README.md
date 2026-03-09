@@ -128,14 +128,14 @@ POST /predict
   "credit_score": 735,
   "annual_income": 95000
 }
-
+```
 Response:
 ```json
 {
   "prediction": "Loan Given",
   "approval_probability": 0.89
 }
-
+```
 ## FastAPI app Screenshots
 
 ![ML Pipeline](images/bank_loan-02.png)
