@@ -1,7 +1,63 @@
-sour# Loan Eligibility MLOps Project
+# Loan Eligibility Prediction – End-to-End ML Pipeline
 
-This is a cleaned, production-style rebuild of the uploaded loan approval project.
-It keeps the same business goal: predict whether a loan should be granted based on applicant financial data. The original problem statement defines this as a supervised prediction task and sets a minimum target of 70% accuracy. fileciteturn0file0
+This project implements an **end-to-end machine learning pipeline** for predicting loan eligibility using financial and credit history data.
+
+The system includes **data preprocessing, feature engineering, model training, batch prediction, and a FastAPI deployment for real-time inference**.
+
+The goal is to demonstrate how a machine learning model can move from **raw data to a production-ready API service**, following practical ML engineering and MLOps practices.
+
+---
+
+## Key Features
+
+- Data cleaning and preprocessing pipeline
+- Feature engineering for financial indicators
+- Multiple model training and evaluation
+  - Logistic Regression
+  - Random Forest
+  - Gradient Boosting
+- Model selection based on ROC-AUC
+- Batch prediction on new loan applications
+- REST API for real-time predictions using FastAPI
+- JSON input format for prediction requests
+- Structured ML project layout for production readiness
+
+---
+
+## Model Performance
+
+Best model: **Gradient Boosting**
+
+| Model | Accuracy | ROC-AUC |
+|------|------|------|
+| Logistic Regression | ~0.65 | ~0.67 |
+| Random Forest | ~0.73 | ~0.74 |
+| Gradient Boosting | **~0.74** | **~0.75** |
+
+---
+
+## API Example
+
+### Request
+
+```json
+{
+  "loan_id": 2001,
+  "customer_id": "C9001",
+  "current_loan_amount": 10000,
+  "term": "Short Term",
+  "credit_score": 735,
+  "annual_income": 95000
+}
+```
+### Response
+
+```json
+{
+  "prediction": "Loan Given",
+  "approval_probability": 0.89
+}
+```
 
 ## Project layout
 
