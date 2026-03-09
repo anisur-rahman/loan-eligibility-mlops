@@ -81,16 +81,6 @@ loan_eligibility_mlops/
 └── requirements.txt
 ```
 
-## What changed from the notebook version
-
-- moved logic out of notebooks into reusable Python modules
-- replaced fragile `factorize()` encoding with `OneHotEncoder(handle_unknown="ignore")`
-- packaged preprocessing and model together in a single sklearn `Pipeline`
-- added engineered features such as debt-to-income ratio and credit utilization ratio
-- added a FastAPI app for serving predictions
-- added a basic pytest unit test
-- added a Dockerfile for deployment
-
 ## Setup
 
 ```bash
