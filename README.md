@@ -152,7 +152,8 @@ curl -X POST http://127.0.0.1:8000/predict \
 ```
 ## Open the API in your browser
 http://127.0.0.1:8000/health
-You should see JSON like: {"status":"ok","model_loaded":true}
+- You should see JSON like: 
+- {"status":"ok","model_loaded":true}
 
 Then open: http://127.0.0.1:8000/docs
 - This opens the FastAPI interactive docs page where you can test /predict.
@@ -192,4 +193,4 @@ Response:
 
 ## Notes
 
-This rebuild is designed to be safer and more maintainable than the original notebooks. It does not try to exactly reproduce the notebook's SoftImpute workflow. Instead, it uses a robust production baseline with sklearn-native preprocessing and a reusable pipeline.
+
