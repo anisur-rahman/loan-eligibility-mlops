@@ -58,6 +58,14 @@ Best model: **Gradient Boosting**
   "approval_probability": 0.89
 }
 ```
+## Tech Stack
+
+- Python
+- Pandas
+- Scikit-learn
+- FastAPI
+- Uvicorn
+- Pytest
 
 ## Project layout
 
@@ -192,5 +200,5 @@ Response:
 ![ML Pipeline](images/bank_loan-05.png)
 
 ## Notes
-
+If you want, I can also show you a small script that automatically generates 100 JSON test cases for your API so you can simulate real load testing.
 
