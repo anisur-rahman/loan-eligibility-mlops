@@ -104,9 +104,24 @@ curl -X POST http://127.0.0.1:8000/predict \
     "tax_liens": 0
   }'
 ```
-## Machine Learning Pipeline
+## Open the API in your browser
+http://127.0.0.1:8000/health
+You should see JSON like: {"status":"ok","model_loaded":true}
+
+Then open: http://127.0.0.1:8000/docs
+This opens the FastAPI interactive docs page where you can test /predict.
+Test /predict from the docs page
+click POST /predict
+click Try it out
+paste a JSON example
+
+## FastAPI app Screenshots
 
 ![ML Pipeline](images/bank_loan-02.png)
+![ML Pipeline](images/bank_loan-01.png)
+![ML Pipeline](images/bank_loan-03.png)
+![ML Pipeline](images/bank_loan-04.png)
+![ML Pipeline](images/bank_loan-05.png)
 
 ## Notes
 
