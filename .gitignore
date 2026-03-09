@@ -26,3 +26,6 @@ models/*.joblib
 
 # Jupyter
 .ipynb_checkpoints/
+
+#extra
+code_review.md
